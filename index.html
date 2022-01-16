@@ -1,29 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>html-css-youtube</title>
 </head>
 <body>
+  <header>
+    <div class="menu-logo">
+      <div class="menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="logo">
+        <img src="https://1000marche.net/wp-content/uploads/2020/03/YouTube-logo.png" alt="">
+      </div>
+    </div>
+    <div class="search-tools">
+      <div class="search">
+        <input type="search" name="cerca" id="" >
+        <div class="search-lens">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div class="mic-tools">
+        <i class="fas fa-microphone"></i>
+      </div>
+    </div>
+    <div class="btn-action">
+      <ul>
+        <li><i class="fas fa-video"></i></li>
+        <li><i class="fas fa-th"></i></li>
+        <li>
+          <div class="notify">
+            <i class="fas fa-bell"></i>
+            <div class="notification">
+              9 +
+            </div>
+          </div>
+        </li>
+        <li><img src="https://picsum.photos/50/50" alt=""></li>
+      </ul>
+    </div>
 
-    <header>
+  </header>
 
-    </header>
+  <main>
 
-    <main>
-        
-        <aside class="barra-sinistra">
+    <aside class="side-bar">
+      <div class="widget">
+        <ul class="widget__menu">
+          <li class="menu-item active">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+            </div>
+            Home
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <i class="far fa-compass"></i>
+            </div>
+            Esplora
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <i class="fab fa-youtube"></i>
+            </div>
+            Iscrizioni
+          </li>
+        </ul>
+      </div>
 
-        </aside>
+      <div class="widget">
+        <ul class="widget__menu">
+          <li class="menu-item">
+            <div class="icon">
+              <i class="far fa-copy"></i>
+            </div>
+            Raccolta
+          </li>
+          <li class="menu-item ghost">
+            <div class="icon">
+              <i class="fas fa-history"></i>
+            </div>
+            Cronologia
+          </li>
+          <li class="menu-item ghost">
+            <div class="icon">
+              <i class="fab fa-youtube"></i>
+            </div>
+            I tuoi video
+          </li>
+          <li class="menu-item ghost">
+            <div class="icon">
+              <i class="far fa-clock"></i>
+            </div>
+            Guarda più tardi
+          </li>
+          <li class="menu-item ghost">
+            <div class="icon">
+              <i class="fas fa-grip-lines"></i>
+            </div>
+            Math
+          </li>
+          <li class="menu-item ghost">
+            <div class="icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            mostra altro
+          </li>
+        </ul>
 
-        <section class="container-principale">
+      </div>
 
-        </section>
+      <div class="widget ghost">
+        <h3 class="widget__title">Iscrizioni</h3>
+        <ul>
+          <li class="menu-item">
+            <div class="icon">
+              <img class="profile-image" src="https://picsum.photos/50/50" alt="">
+            </div>
+            HumanSafari
+            <div class="dot">
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <img class="profile-image" src="https://picsum.photos/50/50" alt="">
+            </div>
+            TheShow
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <img class="profile-image" src="https://picsum.photos/50/50" alt="">
+            </div>
+            Spavald92
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <img class="profile-image" src="https://picsum.photos/50/50" alt="">
+            </div>
+            Sinnaggagghiri
+            <div class="dot">
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <img class="profile-image" src="https://picsum.photos/50/50" alt="">
+            </div>
+            NoisyBoy
+            <div class="dot">
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <img class="profile-image" src="https://picsum.photos/50/50" alt="">
+            </div>
+            SpaceValley
+          </li>
+          <li class="menu-item ghost">
+            <div class="icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            mostra altro
+          </li>
+        </ul>
+      </div>
+      <div class="widget ghost">  
+        <h3 class="widget__title">Altro da YouTube</h3>
+        <ul>
+          <li class="menu-item">
+            <div class="icon">
+              <i class="fab fa-youtube"></i>
+            </div>
+            YouTube Premium
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <i class="fas fa-film"></i>
+            </div>
+            Film
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            Giochi
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            Moda e Bellezza
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            Sport
+          </li>
+        </ul>
+      </div>
+    </aside>
 
-    </main>
-    
+    <section class="main-container">
+      <ul class="categories">
+        <li class="active">Tutti</li>
+        <li>Mix</li>
+        <li>Musica</li>
+        <li>Matematica</li>
+        <li>Cartoni animati</li>
+        <li>Videogiochi</li>
+      </ul>
+
+      <div class="play-list-wrapper">
+        <ul class="play-list" >
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <h3>Notizie generali</h3>
+      <div class="play-list-wrapper">
+        <ul class="play-list" >
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="play-list-item">
+            <div class="card-header">
+              <img src="https://picsum.photos/350/200" alt="" width="350">
+            </div>
+            <div class="card-body">
+              <img src="https://picsum.photos/30/30" alt="">
+              <div class="info">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
 </body>
 </html>

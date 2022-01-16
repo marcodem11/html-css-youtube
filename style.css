@@ -2,34 +2,261 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body{
+    height: 100vh;
+  }
+  
+  ul{
+    list-style-type: none;
+  }
+  
+  img{
+    max-width: 100%;
+  }
+  
+  body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-}
-
-header{
-    padding: 30px;
-    border: 2px solid red;
-    height: 20px;
-}
-
-main{
+  }
+  /* HEADER */
+  header{
     display: flex;
-    border: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+  }
+  
+  .menu-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .menu{
+    font-size: 25px;
+    padding-left: 10px;
+  }
+  
+  .logo{
+    width: 100px;
+  }
+  
+  .search-tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-width: 200px;
+    width: 635px;
+  }
+  
+  .search-tools .search{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%
+  
+  }
+  
+  .search input{
+    width: 250px;
+    height: 30px;
+    width: 65%;
+  
+  }
+  
+  .search-lens button{
+    font-size: 20px;
+    width: 50px;
+    height: 30px;
+  }
+  
+  .mic-tools{
+    line-height: 10px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+  }
+  
+  .btn-action{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+  }
+  
+  .btn-action ul{
+    display: contents;
+  }
+  
+  .btn-action .notify{
+    position: relative;
+  }
+  
+  .btn-action .notification{
+    position: absolute;
+    top: 4px;
+    right: -7px;
+    background-color: red;
+    border-radius: 99999999px;
+    padding: 1px 2px;
+    font-size: 8px;
+    line-height: 7px;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .btn-action img{
+    width: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+  }
+  
+  /* MAIN */
+  main{
+    display: flex;
     flex-grow: 1;
-}
-
-.barra-sinistra{
-    padding: 20px;
+  }
+  
+  .side-bar{
+    overflow: scroll;
     width: 240px;
-    border: 2px solid orange;
-}
-
-.container-principale{
+    flex-shrink: 0;
+  }
+  
+  .widget{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .menu-item{
+    position: relative;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .menu-item:hover, .menu-item.active{
+    background-color: #e5e5e5;
+  }
+  
+  .menu-item .icon{
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  
+  .icon i{
+    display: block;
+  }
+  
+  .dot{
+    position: absolute;
+    right: 20px;
+    padding: 1px;
+    min-width: 8px;
+    min-height: 8px;
+    background-color: #0954CD;
+    border-radius: 50%;
+  }
+  
+  .widget__title{
+    padding-left: 13px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .menu-item .profile-image{
+    display: block;
+    border-radius: 50%;
+    width: 24px;
+  }
+  
+  .main-container{
+    background-color: #f8f8f8;
     flex-grow: 1;
-    padding: 20px;
-    border: 2px solid blue;
-}
+  }
+  
+  .categories{
+    display: flex;
+    background-color: white;
+    gap: 15px;
+    padding: 15px 30px;
+  }
+  
+  .categories li{
+    background-color: #f8f8f8;
+    border-radius: 9999px;
+    border:1px solid #e5e5e5;
+    padding: 0 15px;
+    line-height: 30px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .categories li:hover, .categories li.active{
+    background-color: black;
+    color: white;
+  }
+  
+  .main-container>h3{
+    padding: 30px;
+  }
+  
+  .play-list-wrapper{
+    padding: 20px 30px;
+    border-bottom: 2px solid #e5e5e5;
+    overflow: scroll;
+  }
+  
+  .play-list{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .play-list-item{
+    width: 24%;
+  }
+  
+  .card-header{
+    margin-bottom: 10px;
+  }
+  
+  .card-header img{
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .play-list-item .card-body{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .card-body img{
+    border-radius: 50%;
+  }
+  
+  .info h3{
+    margin-bottom: 10px;
+  }
+  
+  .info p{
+    color: #555555;
+  }
+  
+  .info p:last-child{
+    margin-bottom: 10px;
+  }
